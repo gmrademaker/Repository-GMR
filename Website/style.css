@@ -126,6 +126,10 @@ p a:hover {
     color:darkturquoise;
 }
 
+.currentlink {
+    color:#b947dc;
+}
+
 ul, li {
     display: inline;
     text-align: center;
