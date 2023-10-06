@@ -1,0 +1,246 @@
+* {
+    box-sizing: border-box;
+}
+
+/*Body*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color:#161616;
+    margin-top: 30px;
+}
+
+/*Navbar/header*/
+
+.navbar {
+    background-color:#333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar a{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover{ 
+    color:darkturquoise;
+}
+
+/*Images*/
+
+img {
+    display: block;
+    width: 2000px;
+    height: auto;
+}
+
+.img1 {
+    display: block;
+    width: auto;
+    height: 600px;
+}
+
+.img2 {
+    display: block;
+    width: 700px;
+    height: auto;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    }
+}
+
+/*Text Markup*/
+
+h1 {
+    color: #FFFFFF;
+    font-family: 'Trebuchet', sans-serif;
+    font-size: 5.5em;
+    line-height: 1.375;
+    font-weight: 400;
+    text-align: center;
+    padding: 20px;
+    margin: 50px;
+    border: 5px black;
+    background-image: linear-gradient(275deg, #0354b6 0%, #FFFFFF 59%);
+    -webkit-background-clip: text;
+            background-clip: text; /*Clip gradient to text*/
+    -webkit-text-fill-color: transparent; /*Fill transparent behind text*/
+}
+
+h2, h3 {
+    text-align: center;
+    color:rgba(255,255,255,0.58);
+    font-family: 'Inter', sans-serif;
+    font-size: 2em;
+    line-height: 2;
+    font-weight: 800;
+}
+
+p {
+    text-align: center;
+    color:rgba(255,255,255,0.58);
+    font-family: 'Inter', sans-serif;
+    font-size: 1em;
+    line-height: 2;
+    font-weight: 400;
+    padding: 1px;
+}
+
+p a {
+    color:rgba(255,255,255,0.58);
+}
+
+p a:hover {
+    color:darkturquoise;
+}
+
+ul, li {
+    display: inline;
+    text-align: center;
+    text-decoration: none;
+    color:rgba(255,255,255,0.58);
+}
+
+button {
+    border: none;
+    color: #161616;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition-duration: 0.8s;
+}
+
+.button-center {
+    text-align: center;
+}
+
+/*Flexbox*/
+
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .elem1 {
+    width: 20%;
+    border: 1px;
+    padding-left: 155px;
+    padding-bottom: 50px;
+  }
+
+  .elem2 {
+    width: 50%;
+    border: 1px;
+    padding-right: 190px;
+  }
+
+.wrap2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .elem12 {
+    width: 10%;
+    padding-left: 40px;
+    padding-bottom: 50px;
+  }
+
+  .elem22 {
+    width: 10%;
+    padding-right: 740px;
+    padding-bottom: 50px;
+  }
+
+/*Contact form*/
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #7b04aa;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #b947dc;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+/*Footer*/
+
+footer {
+    text-align: center;
+    background-color:#333;
+    left: 0;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 1px;
+    text-decoration: none; 
+}
+
+footer a:hover {
+    color:darkturquoise;
+}
